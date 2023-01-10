@@ -1,14 +1,14 @@
-<p style="color: green"><%= notice %></p>
+<%= stylesheet_link_tag "search_page" %>
+<%= content_for :title, "WeGoGym | Academias" %>
 
-<h1>Academia</h1>
+<div class="index">
+  <h1 class="search-gym-title">Academias</h1>
 
-<div id="academia">
-  <% @academia.each do |academium| %>
-    <%= render academium %>
-    <p>
-      <%= link_to "Show this academium", academium %>
-    </p>
-  <% end %>
+  <div id="academia">
+    <% @academia.each do |academium| %>
+      <%= render academium %>
+    <% end %>
+  </div>
+
+  <%= link_to "New academium", new_academium_path %>
 </div>
-
-<%= link_to "New academium", new_academium_path %>

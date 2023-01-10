@@ -15,7 +15,11 @@
             Nós somos a WeGoGym, uma plataforma online que ajuda você a encontrar a academia que melhor se adequa às suas necessidades
             e que cabe no seu bolso. Nesta plataforma, você pode encontrar milhares de academias de forma fácil, rápida e intuitiva.
           </h1>
-          <button id="first-carousel-bt" type="button" class="btn btn-primary">Saiba mais</button>
+          <a href="#main-sec">
+            <button id="first-carousel-bt" type="button" class="btn btn-primary">
+              Saiba mais
+            </button>
+          </a>
           <div class="carousel-caption d-none">
           </div>
         </div>
@@ -32,7 +36,9 @@
             Com nosso recurso de geolocalização, é possível que você, a partir de um dado endereço, 
             encontre e descubra as academias e centros esportivos mais próximos!
           </h1>
-          <button id="map-button" type="button" class="btn btn-primary">Teste já</button>
+          <a href="#second-content-section">
+            <button id="map-button" type="button" class="btn btn-primary">Teste já</button>
+          </a>
           <div class="carousel-caption d-none">
           </div>
         </div>
@@ -65,6 +71,128 @@
     </div>
   </div>
 </div>
-<section id="main-sec">
-
+<section name="sec" id="main-sec">
+  <section>
+    <h1 id="main-section-first-title" class="section-title">
+    O que é a <span style="color: rgba(255, 219, 45, 1);">WeGoGym</span>?
+    </h1> 
+  </section>
+  <section>
+    <h2 id="main-section-first-text" class="section-text">
+      Saiba o que é a plataforma que ajuda você a encontrar a academia que se encaixa em seu perfil.
+      <br>
+      <br>
+      Somos um projeto independente criado por alunos da faculdade UNIFESP. Surgimos da vontade de resolver o
+      problema da falta de informações acessíveis sobre as academias de nossa cidade. Acreditamos que você já tenha passado
+      por isso, ou conhece alguém que queria saber uma informação específica sobre um estabelecimento, mas não achava
+      de jeito nenhum. Nosso site irá permitir que você descubra desde os planos e aulas da academia até a qualidade dos
+      equipamentos.
+    </h2>
+  </section>
+  <section id="first-content-section" class="content-section">
+    <div id="first-polygon">
+    </div>
+    <section id="checklist-text" class="section-text">
+      <p style="padding-left: 0%; padding-bottom: 2%;">
+        Aqui na <span style="font-family: google-bold">WeGoGym</span> você pode encontrar as seguintes funcionalidades:
+      </p>
+      <p>
+        <i class="fa fa-check-circle check-item" style="color: rgba(255, 219, 45, 1);"></i>
+        Geolocalização
+      </p>
+      <p>
+        <i class="fa fa-check-circle check-item" style="color: rgba(255, 219, 45, 1);"></i>
+        Informações
+      </p>
+      <p>
+        <i class="fa fa-check-circle check-item" style="color: rgba(255, 219, 45, 1);"></i>
+        Avaliações
+      </p>
+      <p>
+        <i class="fa fa-check-circle check-item" style="color: rgba(255, 219, 45, 1);"></i>
+        Comunidades
+      </p>
+      <p style="padding-top: 3%">
+        A seguir, você poderá entender melhor cada uma dessas funcionalidades!
+      </p>
+    </section>
+  </section>
+  <section id="second-content-section" class="content-section">
+    <section>
+      <h1 id="second-section-first-title" class="section-title">
+        <span style="font-family: google-bold; color: rgba(255, 219, 45, 1);">Geo</span>localização
+      </h1>
+    </section>
+    <section>
+      <h2 id="second-section-first-text" class="section-text">
+        A partir da localização que você colocar, é possível ver as academias próximas a você, 
+        de forma rápida, prática e eficiente.
+        Pode não parecer, mas o fator distância é um dos mais cruciais na hora
+        de se escolher uma academia para treinar.
+      </h2>
+    </section>
+    <section id="map-section">
+      <div id="map-search-area">
+        <input id="input-address" type="search" placeholder="Insira seu endereço" aria-label="Search">
+        <i class="fa fa-search" id="magnifying-glass-map"></i>
+      </div>
+      <div>
+        <%= image_tag "map-real.jpg" , id:"map-image", class:"w-100" %>
+      </div>
+    </section>
+  </section>
+  <section id="third-content-section" class="content-section">
+    <section>
+      <h1 id="third-section-first-title" class="section-title">
+        Informações
+      </h1>
+    </section>
+    <section>
+      <h2 id="third-section-first-text" class="section-text">
+        Aqui, você pode ficar sabendo de diversas informações sobre a academia
+        que procura. Seja a localidade, o preço da mensalidade, os vários tipos 
+        de avaliações, dentre diversas outras informações adicionais!
+      </h2>
+    </section>
+    <section>
+      <h2 id="third-section-second-text" class="section-text">
+        Nosso diferencial está no fato de que os próprios usuários podem
+        enviar informações para compor as páginas das academias. Não há
+        nada mais sincero e real que as visões e opiniões de quem frequenta
+        o local. Já pensou, assinar um plano e descobrir que não tem halter
+        na academia?
+      </h2>
+    </section>
+  </section>
+  <section id="forth-content-section" class="content-section">
+    <section>
+      <h1 id="forth-section-first-title" class="section-title">
+        Avaliações
+      </h1>
+    </section>
+    <section>
+      <h2 id="forth-section-first-text" class="section-text">
+        Todas as academias registradas em nosso site estão sujeitas a
+        avaliações dos usuários registrados em seus respectivos
+        estabelecimentos. A avaliação é composta por diversos critérios,
+        como limpeza, recursos, equipamentos, disponibilidade de aulas,
+        planos, etc.
+      </h2>
+    </section>
+  </section>
+  <section id="fifth-content-section" class="content-section">
+    <section>
+      <h1 id="fifth-section-first-title" class="section-title">
+        Comunidades
+      </h1>
+    </section>
+    <section>
+      <h2 id="fifth-section-first-text" class="section-text">
+        Futuramente em nosso site, você será capaz de fazer parte 
+        das comunidades das academias, podendo ver os demais integrantes
+        e receber notificações, graças à funcionalidade de comunidade que
+        será implementada.
+      </h2>
+    </section>
+  </section>
 </section>

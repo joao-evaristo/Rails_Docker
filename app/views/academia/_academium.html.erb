@@ -1,53 +1,51 @@
-<style>
-  .gym_item {
-    color: white;
-  }
-</style>
+<%= stylesheet_link_tag "search_page" %>
 
-<div id="<%= dom_id academium %>">
-  <p class="gym_item">
-    <strong>Nome:</strong>
-    <%= academium.nome %>
-  </p>
-
-  <p class="gym_item">
-    <strong>Cnpj:</strong>
-    <%= academium.cnpj %>
-  </p>
-
-  <p class="gym_item">
-    <strong>Telefone:</strong>
-    <%= academium.telefone %>
-  </p>
-
-  <p class="gym_item">
-    <strong>Endereco:</strong>
-    <%= academium.endereco %>
-  </p>
-
-  <p class="gym_item">
-    <strong>Precomatricula:</strong>
-    <%= academium.precoMatricula %>
-  </p>
-
-  <p class="gym_item">
-    <strong>Precomensalidade:</strong>
-    <%= academium.precoMensalidade %>
-  </p>
-
-  <p class="gym_item">
-    <strong>Site:</strong>
-    <%= academium.site %>
-  </p>
-
-  <p class="gym_item">
-    <strong>Instagram:</strong>
-    <%= academium.instagram %>
-  </p>
-
-  <p class="gym_item">
-    <strong>Facebook:</strong>
-    <%= academium.facebook %>
-  </p>
-
+<div class="container-fluid">
+  <section class="vh-90 mingradient-custom">
+    <div class="container py-5 h-120">
+      <div class="row justify-content-center align-items-center h-100">
+        <div class="col-14 col-lg-11 col-xl-9">
+          <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+            <div class="card-body p-0 p-md-0">
+              <div class="row">
+                <div class="col-md-5 mb-0">
+                  <%= image_tag "card-image.jpg" , id:"polygon", class:"w-100" %>  
+                </div>
+                <div class="col-md-6 mb-4 mt-3">
+                  <h3 class="mb-4 pb-2 pb-md-0 mb-md-4" style="font-family: google-bold;">
+                    <%= link_to academium.nome, academium, id: "gym-title" %>
+                  </h3>
+                  <hr>
+                  <div class="row">
+                    <p class="card-text">
+                      <span class="feature-title">Endereço: </span> 
+                      <%= academium.endereco %>
+                    </p>
+                  </div>
+                  <div class="row">
+                    <p class="card-text">
+                      <span class="feature-title">Telefone: </span> 
+                      <%= academium.telefone %>
+                    </p>
+                  </div>
+                  <div class="row">
+                    <p class="card-text">
+                      <span class="feature-title">Site: </span> 
+                      <%= academium.site %>
+                    </p>
+                  </div>
+                  <div class="row social-media">
+                    <i class="fa fa-facebook icon"></i> <%= academium.facebook %>
+                  </div>
+                  <div class="row social-media">
+                    <i class="fa fa-instagram icon"></i> <%= academium.instagram %>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>

@@ -8,8 +8,8 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <%= link_to 'Home' , root_path, class:'nav-item nav-link', id:'nav_home' %>
       <%= link_to 'Academias' , academia_path, class:'nav-item nav-link', id:'nav_academias' %>
-      <a id="nav_faq" href="#" class="nav-item nav-link">FAQ</a>
     </ul>
     <form class="d-flex" role="search" action="/search">
       <input id="search_area" class="form-control me-2" type="search" name="q" placeholder="Busque por academias, centros esportivos, etc..." aria-label="Search">
@@ -20,10 +20,10 @@
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <% if Current.user %>
         <li class="nav-item" id="username-area">
-          <%= link_to 'Ver Perfil', usuario_path(Current.user.id), id: "username"%>
+          <%= link_to 'Ver Perfil', usuario_path(Current.user.id), id: "username", class: 'nav-item nav-link'%>
         </li>
         <li class="nav-item" id="signout-area">
-          <%= button_to logout_path, method: :delete, class: "btn nav-link", style: "display: flex; justify-content: center", id: "signout" do%>
+          <%= button_to logout_path, method: :delete, class: "btn nav-item nav-link", style: "display: flex; justify-content: center", id: "signout" do%>
             <i class="fa fa-sign-out"></i>
           <% end %>
 

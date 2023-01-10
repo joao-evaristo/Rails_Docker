@@ -1,4 +1,9 @@
-<h1 style="height: 300px; background-color: white"><span style="position: absolute; top: 20%">Resultados da busca</span></h1>
+<%= stylesheet_link_tag "search_page" %>
+<%= content_for :title, "WeGoGym | Resultados da Busca" %>
 
-
-<%= render @academia_busca %>
+<div class="index">
+    <h1 class="search-gym-title">Resultados</h1>
+    <%= render @academia_busca %>
+</div>
+<div>
+</div>

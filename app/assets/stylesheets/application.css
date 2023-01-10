@@ -16,7 +16,7 @@
  */
 
 body {
-    background-color: black;
+    background-color: #222121;
     min-width: 300px;
 }
 
@@ -35,10 +35,19 @@ body {
     src: url('Product Sans Regular.ttf');
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
 #navbar-main {
     padding-left: 5%;
     padding-right: 5%;
-    background-color: rgba(14, 13, 13, 1);
+    background-color: #222121;
 }
 
 .navbar-toggler {
@@ -47,6 +56,10 @@ body {
     background-color: rgba(0, 0, 0, 0);
     border-radius: 7px;
     border-color: white;
+}
+
+.navbar-toggler:hover {
+    background-color: rgba(184, 184, 184, 0.212);
 }
 
 .navbar .navbar-toggler[aria-expanded="true"] {
@@ -84,13 +97,38 @@ body {
 
 .navbar-nav {
     font-size: 120%;
-    margin-left: 2%;
+    margin-left: 3%;
     max-width: 100%;
 }
 
+.nav-item {
+    color: white;
+    margin-right: 40px;
+}
+
+#nav_home {
+    position: relative;
+    color: rgba(255, 225, 92, 1);;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.151);
+    width: fit-content;
+}
+
+#nav_home:hover {
+    color: rgba(255, 225, 92, 1);
+}
+
+#nav_home::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 4px;
+    background-color: rgba(255, 225, 92, 1);
+    border-radius: 5rem;
+}
+
 #nav_academias {
-    width: 140px;
-    color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.151);
 }
 
@@ -99,8 +137,6 @@ body {
 }
 
 #nav_faq {
-    width: 140px;
-    color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.151);
 }
 
@@ -111,9 +147,8 @@ body {
 #nav_login{
     padding-top: 10px;
     height: 50px;
-    width: 140px;
-    color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.151);
+    margin-right: 20px;
 }
 
 #nav_login:hover {
@@ -126,7 +161,7 @@ body {
     color: rgb(0, 0, 0);
     background-color: rgba(255, 219, 45, 1);
     text-align: center;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 #nav_register:hover {
@@ -143,6 +178,7 @@ body {
 #search_area {
     width: 450px;
     border: none;
+    background-color: white;
     box-shadow: 2px 2px rgb(0, 0, 0);
 }
 
@@ -157,14 +193,6 @@ body {
     width: 40px;
     border: none;
     box-shadow: 2px 2px rgb(0, 0, 0);
-}
-
-#username-area {
-    height: 40px;
-    width: 140px;
-    margin: none;
-    text-align: left;
-    padding-top: 6.5px;
 }
 
 #username {
@@ -184,6 +212,10 @@ body {
     color: white;
     height: 32px;
     width: 33px;
+}
+
+#signout:hover {
+    color: rgba(255, 225, 92, 1);
 }
 
 .btn-terciary {
@@ -364,7 +396,7 @@ body {
 
 .footer-basic {
     padding: 30px 0;
-    background-color: #000000;
+    background-color: #222121;
     color: rgba(255, 255, 255, 0.87);
     font-family: google-regular;
 }
@@ -440,34 +472,217 @@ body {
 
 #main-sec {
     background-color: white;
-    height: 1500px;
+    height: fit-content;
     width: 100%;
     margin: 0 auto;
+    padding-top: 2%;
+}
+
+.section-title {
+    color: black;
+    font-family: google-bold;
+    text-align: center;
+    font-size: 4.6vh;
+}
+
+#main-section-first-title {
+    left: 0; 
+    right: 0;
+    padding-top: 6vh;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.section-text {
+    font-family: google-regular;
+    color: rgb(63, 63, 63);
+    text-align: center;
+    font-size: 2.3vh;
+    width: 70%;
+}
+
+#main-section-first-text {
+    left: 0; 
+    right: 0;
+    margin-left: auto; 
+    margin-right: auto; 
+    padding-bottom: 2.3vh;
+}
+
+.content-section {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#first-content-section {
+    overflow: auto;
+    display: flex;
+}
+
+#first-polygon {
+    width: 45vw;
+    height: 65vh;
+    background-color: rgb(0, 0, 0);
+    clip-path: polygon(0 0%, 100% 0%, 75% 100%, 0% 100%);
+    float: left;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(sixth_image.jpg);
+}
+
+#checklist-text {
+    float: left;
+    overflow: hidden;
+    height: 70vh;
+    width: 50vw;
+    text-align: left;
+    padding-left: 5%;
+    padding-top: 5%;
+    font-size: 3.2vh;
+    color: black;
+}
+
+.check-item {
+    padding-left: 5%;
+}
+
+#second-content-section {
+    padding-top: 0%;
+}
+
+#second-section-first-text {
+    text-align: left;
+    margin: auto;
+    width: 83%;
+}
+
+#map-section {
+    overflow: auto;
+    display: flex;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 10%;
+}
+
+#map-search-area {
+    margin-right: 5%;
+    position: relative;
+}
+
+#map-search-area i{
+    position: absolute;
+    right: 3%;
+    top: 2.3%;
+}
+
+#input-address {
+    width: 30vw;
+    height: 4vh;
+    float: left;
+    background-color: rgba(207, 207, 207, 0.406);
+    border: 1px solid rgba(207, 207, 207, 0.406);
+    border-radius: 10px;
+    display: flex;
+    justify-content: right;
+    box-shadow: 1px 1px rgb(204, 204, 204);
+    padding-left: 4%;
+    padding-right: 2%;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+#input-address:focus {
+    outline: none;
+    box-shadow: 2px 2px rgb(204, 204, 204);
+}
+
+#input-address:hover {
+    outline: none;
+    box-shadow: 2px 2px rgb(204, 204, 204);
+}
+
+#magnifying-glass-map {
+    color: black;
+}
+
+#map-image {
+    float: left;
+    height: 50vh;
+    width: 60vw;
+    padding-right: 10%;
+}
+
+#third-content-section {
+    background-color: #222121;
+}
+
+#third-section-first-title {
+    color: white;
+}
+
+#third-section-first-text {
+    text-align: left;
+    padding-left: 7%;
+    width: 45%;
+    height: fit-content;
+    color: white;
+}
+
+#third-section-second-text {
+    text-align: left;
+    padding-right: 7%;
+    width: 100%;
+    height: fit-content;
+    padding-left: 50%;
+    color: white;
+}
+
+#forth-section-first-text {
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+#fifth-section-first-text {
+    margin-left: auto; 
+    margin-right: auto; 
 }
 
 @media only screen and (max-width: 767px) {
     .navbar {
-        position:relative;
+        position: relative;
     } 
+
+    .d-flex {
+        padding-top: 2%;
+    }
+
     #search_area {
         width: 80%;
     }
+
     .content-title {
         font-size: 7vw;
         width: 80%;
         right: 10%;
     }
+
     .content {
         display: none;
     }
+
     .btn-primary {
         display: none;
     }
+
     .line {
         height: 2.5%;
         width: 16%;
         position: absolute;
     }
+
     #line1 {
         right: 73.5%;
         top: 54%;
@@ -486,6 +701,27 @@ body {
     #placeholder-maps {
         display: none;
     }
+
+    #first-polygon {
+        clip-path: polygon(0 0%, 75% 0%, 75% 100%, 0% 100%);
+    }
+
+    #checklist-text {
+        padding-left: 0%;
+    }
+
+    #checklist-text {
+        font-size: 2.3vh;
+    }
+
+    #third-section-first-text {
+        width: 100%;
+    }
+    
+    #third-section-second-text {
+        padding-left: 7%;
+        width: 100%;
+    }
 }
 
 
@@ -493,8 +729,40 @@ body {
     #nav_faq {
         width: 80px;
     }
+
+    .d-flex {
+        padding-top: 2%;
+    }
+
     #search_area {
         width: 300px;
     }
-    
+
+    .navbar-nav {
+        margin-left: 0;
+    }
+
+    #map-section {
+        overflow: none;
+        display: block;
+    }
+
+    #input-address {
+        display: flex;
+        float: none;
+        width: 100%;
+    }
+
+    #input-address i {
+        display: flex;
+        top: 5%;
+    }
+
+    #map-image {
+        padding-top: 5%;
+        float: none;
+        height: 100%;
+        padding-bottom: 5%;
+        margin: auto;
+    }
 }
