@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_08_013809) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_11_015632) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -56,6 +56,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_08_013809) do
     t.bigint "academium_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "validation_status"
     t.index ["academium_id"], name: "index_user_gym_admins_on_academium_id"
     t.index ["usuario_id"], name: "index_user_gym_admins_on_usuario_id"
   end
